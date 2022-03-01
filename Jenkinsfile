@@ -13,11 +13,12 @@ pipeline {
                    git clone https://github.com/sravan-github/k8stest.git
                    ls -l
                    whoami
+                   pwd
                    cd
                    pwd
-                   mkdir .kube
-                   cp -rf config .kube/
-                   kubectl get nodes
+                   #mkdir .kube
+                   #cp -rf config .kube/
+                   #kubectl get nodes
                    '''
             }
         }       
