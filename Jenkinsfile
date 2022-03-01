@@ -18,6 +18,7 @@ pipeline {
                    pwd
                    mkdir .kube
                    cp -rf /var/lib/jenkins/workspace/test-job/config .kube/
+                   cp -rf /var/lib/jenkins/workspace/test-job/nginx.yml /root
                    kubectl get nodes
                    kubectl apply -f nginx.yml
                    '''
