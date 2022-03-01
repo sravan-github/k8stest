@@ -16,7 +16,7 @@ pipeline {
                    ls -l
                    whoami
                    pwd
-                   mkdir .kube
+                   mkdir /root/.kube
                    cp -rf config /root/.kube/
                    #cp -rf nginx.yml /root
                    ls -l
