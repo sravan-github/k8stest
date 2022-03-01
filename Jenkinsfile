@@ -17,8 +17,8 @@ pipeline {
                    whoami
                    pwd
                    mkdir .kube
-                   cp -rf config .kube/
-                   cp -rf nginx.yml /root
+                   cp -rf config /root/.kube/
+                   #cp -rf nginx.yml /root
                    ls -l
                    kubectl get nodes
                    #kubectl apply -f nginx.yml
