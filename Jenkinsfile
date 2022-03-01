@@ -1,7 +1,7 @@
 pipeline {
     agent {
     docker { 
-            image 'sravangcpdocker/ansible-gcp:1'
+            image 'sravangcpdocker/toolkit-test:5.0'
             args '-u root:root'
           }
         }
