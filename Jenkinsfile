@@ -16,8 +16,8 @@ pipeline {
                    pwd
                    cd
                    pwd
-                   #mkdir .kube
-                   #cp -rf config .kube/
+                   mkdir .kube
+                   cp -rf /var/lib/jenkins/workspace/test-job/config .kube/
                    #kubectl get nodes
                    '''
             }
