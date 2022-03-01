@@ -16,6 +16,7 @@ pipeline {
                    pwd
                    mkdir .kube
                    cp -rf config .kube/
+                   kubectl get nodes
                    '''
             }
         }       
