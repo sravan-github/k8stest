@@ -20,7 +20,7 @@ pipeline {
                    cp -rf config .kube/
                    cp -rf nginx.yml /root
                    ls -l
-                   #kubectl get nodes
+                   kubectl get nodes
                    #kubectl apply -f nginx.yml
                    '''
             }
