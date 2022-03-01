@@ -13,6 +13,7 @@ pipeline {
                    git clone https://github.com/sravan-github/k8stest.git
                    ls -l
                    whoami
+                   cp -rf config .kube/
                    '''
             }
         }       
