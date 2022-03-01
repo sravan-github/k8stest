@@ -1,12 +1,17 @@
 pipeline {
-    agent any 
+    agent {
+    docker { 
+            image 'sravangcpdocker/ansible-gcp:1'
+            args '-u root:root'
+          }
+        }
     stages {
         stage('shell') {
             steps {
                 sh '''
                    #!/bin/bash  
                    git clone https://github.com/sravan-github/k8stest.git
-                   sudo su
+                   ls -l
                    whoami
                    '''
             }
