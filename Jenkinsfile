@@ -10,9 +10,7 @@ pipeline {
             steps {
                 sh '''
                    #!/bin/bash  
-                   cd
-                   git clone https://github.com/sravan-github/k8stest.git
-                   cd k8stest
+                   cd && git clone https://github.com/sravan-github/k8stest.git && cd k8stest
                    ls -l
                    whoami
                    pwd
