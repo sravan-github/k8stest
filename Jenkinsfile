@@ -1,7 +1,7 @@
 pipeline {
     agent {
     docker { 
-            image 'sravangcpdocker/toolkit-test:5.0'
+            image 'sravangcpdocker/toolkit-test:6.0'
             args '-u root:root'
           }
         }
