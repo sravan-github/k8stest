@@ -43,7 +43,7 @@ spec:
                   key: project-id                             
         - name: cloudsql-proxy
           image: gcr.io/cloudsql-docker/gce-proxy:1.17
-          command: ["/cloud_sql_proxy", "-instances=sqlproxy=tcp:3306", "-credential_file=/secrets/cloudsql/credentials.json"]
+          command: ["/cloud_sql_proxy", "-instances=proxy_name=tcp:3306", "-credential_file=/secrets/cloudsql/credentials.json"]
           volumeMounts:
             - name: secrets-volume
               mountPath: /secrets/cloudsql
